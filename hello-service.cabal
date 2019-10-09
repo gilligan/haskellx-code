@@ -1,0 +1,16 @@
+cabal-version:       >=1.10
+name:                hello-service
+version:             0.1.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              tobias pflug
+maintainer:          tobias.pflug@tweag.io
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+executable hello-service
+  main-is:             Main.hs
+  build-depends:       base   >=4.12   && <4.13
+                     , scotty
+  hs-source-dirs:      src
+  default-language:    Haskell2010
